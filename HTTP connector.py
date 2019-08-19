@@ -9,4 +9,3 @@ def get(url):
         time.sleep(1)
         # try again
         return get(url)
-    xc
