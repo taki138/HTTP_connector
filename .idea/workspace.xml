@@ -122,7 +122,8 @@
       <option name="presentableId" value="Default" />
       <updated>1566125891388</updated>
       <workItem from="1566125892671" duration="770000" />
-      <workItem from="1566175776912" duration="4818000" />
+      <workItem from="1566175776912" duration="5068000" />
+      <workItem from="1566193642843" duration="1842000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1566176015996</created>
@@ -159,7 +160,21 @@
       <option name="project" value="LOCAL" />
       <updated>1566180172131</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="3d commit">
+      <created>1566180872038</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1566180872038</updated>
+    </task>
+    <task id="LOCAL-00007" summary="solving">
+      <created>1566194511988</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1566194511988</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,7 +185,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -180,10 +197,11 @@
     <MESSAGE value="2nd commit" />
     <MESSAGE value="first commit" />
     <MESSAGE value="3d commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="3d commit" />
+    <MESSAGE value="solving" />
+    <option name="LAST_COMMIT_MESSAGE" value="solving" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/HTTP_connector$HTTP_connector.coverage" NAME="HTTP connector Coverage Results" MODIFIED="1566177796424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
-    <SUITE FILE_PATH="coverage/HTTP_connector$HTTP_connector__1_.coverage" NAME="HTTP connector (1) Coverage Results" MODIFIED="1566179447827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/HTTP_connector$HTTP_connector__1_.coverage" NAME="HTTP connector (1) Coverage Results" MODIFIED="1566202667621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
   </component>
 </project>

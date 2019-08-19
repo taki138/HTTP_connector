@@ -1,16 +1,15 @@
 import time
-
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util import Retry
 
-# attempt attempt realise Best practice with retries with requests
+# realise Best practice with retries with requests
 url = 'http://httpbin.org/'
-HTTPMethods = 'delete'
+HTTPMethods = 'get'
 
 
 def requests_retry_session(
-        retries=3,
+        retries=10,
         backoff_factor=0.3,
         status_forcelist=(500, 502, 504),
         session=None,
@@ -29,15 +28,25 @@ def requests_retry_session(
     return session
 
 
-response = requests_retry_session().get(url + HTTPMethods)
-print(response.text)
+t0 = time.time()
+try:
+    response = requests_retry_session().get(
+        'http://localhost:9999',
+    )
+except Exception as x:
+    print('It failed :(', x.__class__.__name__)
+else:
+    print('It eventually worked', response.status_code)
+finally:
+    t1 = time.time()
+    print('Took', t1 - t0, 'seconds')
 
-if __name__ == '__main__':
-    # requests_retry_session()
-    s = requests.Session()
-    s.auth = ('user', 'pass')
-    s.headers.update({'x-test': 'true'})
+# if __name__ == '__main__':
+#     # requests_retry_session()
+#     s = requests.Session()
+#     s.auth = ('user', 'pass')
+#     s.headers.update({'x-test': 'true'})
 
-response = requests_retry_session(session=s).get(url + HTTPMethods)
+# response = requests_retry_session(session=s).get(url + HTTPMethods)
 
 
