@@ -31,7 +31,7 @@ def requests_retry_session(
 t0 = time.time()
 try:
     response = requests_retry_session().get(
-        'http://localhost:9999',
+        url+HTTPMethods,
     )
 except Exception as x:
     print('It failed :(', x.__class__.__name__)
