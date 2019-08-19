@@ -6,7 +6,7 @@ from urllib3.util import Retry
 
 # attempt attempt realise Best practice with retries with requests
 url = 'http://httpbin.org/'
-HTTPMethods = 'get'
+HTTPMethods = 'delete'
 
 
 def requests_retry_session(
@@ -29,5 +29,15 @@ def requests_retry_session(
     return session
 
 
+response = requests_retry_session().get(url + HTTPMethods)
+print(response.text)
+
 if __name__ == '__main__':
-    requests_retry_session()
+    # requests_retry_session()
+    s = requests.Session()
+    s.auth = ('user', 'pass')
+    s.headers.update({'x-test': 'true'})
+
+response = requests_retry_session(session=s).get(url + HTTPMethods)
+
+
