@@ -1,6 +1,6 @@
 import time
 import requests
-
+# attempt attempt realise Best practice with retries with requests
 url = 'http://httpbin.org/'
 HTTPMethods = 'get'
 
