@@ -2,24 +2,32 @@ import time
 
 import requests
 from requests.adapters import HTTPAdapter
-from requests.packages.urllib3.util.retry import Retry
+from urllib3.util import Retry
+
 # attempt attempt realise Best practice with retries with requests
 url = 'http://httpbin.org/'
 HTTPMethods = 'get'
 
 
-def get(url, HTTPMethods):
-    try:
-        responce = requests.get(url + HTTPMethods).text
-        print(f"Try: {responce}")
-        return requests.get((url + HTTPMethods))
-    except Exception:
-        # sleep for a bit in case that helps
-        time.sleep(1)
-        # try again
-        print(f"Except: {responce}")
-        return get(url)
+def requests_retry_session(
+        retries=3,
+        backoff_factor=0.3,
+        status_forcelist=(500, 502, 504),
+        session=None,
+):
+    session = session or requests.Session()
+    retry = Retry(
+        total=retries,
+        read=retries,
+        connect=retries,
+        backoff_factor=backoff_factor,
+        status_forcelist=status_forcelist,
+    )
+    adapter = HTTPAdapter(max_retries=retry)
+    session.mount('http://', adapter)
+    session.mount('https://', adapter)
+    return session
 
 
 if __name__ == '__main__':
-    get(url, HTTPMethods)
+    requests_retry_session()
