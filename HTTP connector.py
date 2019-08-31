@@ -6,13 +6,13 @@ from urllib3.util import Retry
 
 # realise Best practice with retries with requests
 url = 'http://httpbin.org/'
-HTTPMethods = 'status/500'
+HTTPMethods = 'status/504'
 
-
+stat_forcelist=(500, 502, 504)
 def requests_retry_session(
         retries=6,
         backoff_factor=0.6,
-        status_forcelist=(500, 502, 504),
+        status_forcelist=stat_forcelist,
         session=None,
         raise_on_status=True
 
@@ -28,8 +28,7 @@ def requests_retry_session(
     adapter = HTTPAdapter(max_retries=retry)
     session.mount('http://', adapter)
     session.mount('https://', adapter)
-    print(retry)
-    print(adapter)
+    print(session)
     return session
 
 
