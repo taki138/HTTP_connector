@@ -3,13 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="1f558eec-45ad-4bee-9ed3-240c31303f54" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTTP connector.py" beforeDir="false" afterPath="$PROJECT_DIR$/HTTP connector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions kit.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions kit.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,7 +41,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.HTTP connector (1)">
+  <component name="RunManager" selected="Python.tk inter">
     <configuration name="HTTP connector (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="HTTP connector" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -101,12 +108,60 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="functions kit" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="HTTP connector" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\ProgramData\Anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/functions kit.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tk inter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="HTTP connector" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\ProgramData\Anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tk inter.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.HTTP connector" />
       <item itemvalue="Python.HTTP connector (1)" />
+      <item itemvalue="Python.functions kit" />
+      <item itemvalue="Python.tk inter" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.tk inter" />
+        <item itemvalue="Python.functions kit" />
         <item itemvalue="Python.HTTP connector (1)" />
       </list>
     </recent_temporary>
@@ -123,7 +178,10 @@
       <updated>1566125891388</updated>
       <workItem from="1566125892671" duration="770000" />
       <workItem from="1566175776912" duration="5068000" />
-      <workItem from="1566193642843" duration="9223000" />
+      <workItem from="1566193642843" duration="10760000" />
+      <workItem from="1567264997787" duration="543000" />
+      <workItem from="1567265821971" duration="601000" />
+      <workItem from="1567270004782" duration="3734000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1566176015996</created>
@@ -195,7 +253,21 @@
       <option name="project" value="LOCAL" />
       <updated>1566211088260</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="timeout add">
+      <created>1566215612964</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1566215612964</updated>
+    </task>
+    <task id="LOCAL-00012" summary="functions kit.py">
+      <created>1567288712721</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1567288712721</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,10 +293,14 @@
     <MESSAGE value="solving" />
     <MESSAGE value="екн-except wrapper add" />
     <MESSAGE value="try-except wrapper add" />
-    <option name="LAST_COMMIT_MESSAGE" value="try-except wrapper add" />
+    <MESSAGE value="timeout add" />
+    <MESSAGE value="functions kit.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="functions kit.py" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/HTTP_connector$HTTP_connector.coverage" NAME="HTTP connector Coverage Results" MODIFIED="1566177796424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
-    <SUITE FILE_PATH="coverage/HTTP_connector$HTTP_connector__1_.coverage" NAME="HTTP connector (1) Coverage Results" MODIFIED="1566215047985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/HTTP_connector$tk_inter.coverage" NAME="tk inter Coverage Results" MODIFIED="1567290645459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/HTTP_connector$functions_kit.coverage" NAME="functions kit Coverage Results" MODIFIED="1567290631089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/HTTP_connector$HTTP_connector__1_.coverage" NAME="HTTP connector (1) Coverage Results" MODIFIED="1566216483455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
   </component>
 </project>

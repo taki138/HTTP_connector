@@ -1,26 +1,6 @@
 import tkinter as tk
 
 
-# def identity(x):
-#     '''Identity function'''
-#     return x
-#
-#
-# f = identity
-# for attribute in (f.__name__,
-#                   f.__doc__,
-#                   f.__module__,
-#                   f.__class__):
-#     print(attribute)
-
-# add_l = lambda x, y: x + y
-# print(add_l(1, 120))
-#
-#
-# def under_lambda(x, y):
-#     return add_l(x, y)
-# print(under_lambda(8, 3))
-
 class App:
     """"""
 
