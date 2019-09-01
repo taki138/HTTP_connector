@@ -70,3 +70,8 @@ def makeitalic(str='Test'):
 
 
 ######### memoization #########
+# https://habr.com/ru/post/335866/
+# https://habr.com/ru/post/426341/
+# https://habr.com/ru/post/190850/
+# https://habr.com/ru/post/423679/
+# https://habr.com/ru/post/121162/
