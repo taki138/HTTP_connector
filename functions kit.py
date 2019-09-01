@@ -60,3 +60,13 @@ def funct_excecution_timer(funct):
 
 
 funct_excecution_timer(makeitalic(str='Test'))
+
+@funct_excecution_timer
+def makeitalic(str='Test'):
+    def wrapped():
+        return "<i>" + str + "</i>"
+
+    return wrapped
+
+
+######### memoization #########
