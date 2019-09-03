@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1f558eec-45ad-4bee-9ed3-240c31303f54" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTTP connector.py" beforeDir="false" afterPath="$PROJECT_DIR$/HTTP connector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions kit.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions kit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sets.py" beforeDir="false" afterPath="$PROJECT_DIR$/sets.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +41,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.functions kit">
+  <component name="RunManager" selected="Python.sets">
     <configuration name="HTTP connector (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="HTTP connector" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -131,6 +130,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="sets" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="HTTP connector" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\ProgramData\Anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sets.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="tk inter" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="HTTP connector" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -158,9 +179,11 @@
       <item itemvalue="Python.HTTP connector (1)" />
       <item itemvalue="Python.functions kit" />
       <item itemvalue="Python.tk inter" />
+      <item itemvalue="Python.sets" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.sets" />
         <item itemvalue="Python.functions kit" />
         <item itemvalue="Python.tk inter" />
         <item itemvalue="Python.HTTP connector (1)" />
@@ -184,7 +207,7 @@
       <workItem from="1567265821971" duration="601000" />
       <workItem from="1567270004782" duration="12354000" />
       <workItem from="1567330360479" duration="4146000" />
-      <workItem from="1567528170056" duration="357000" />
+      <workItem from="1567528170056" duration="891000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1566176015996</created>
@@ -298,7 +321,21 @@
       <option name="project" value="LOCAL" />
       <updated>1567311812377</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="ыуеы">
+      <created>1567528684957</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1567528684957</updated>
+    </task>
+    <task id="LOCAL-00018" summary="sets">
+      <created>1567528716111</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1567528716111</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,10 +367,13 @@
     <MESSAGE value="decorators" />
     <MESSAGE value="funct_excecution_timer(funct)" />
     <MESSAGE value="memoization" />
-    <option name="LAST_COMMIT_MESSAGE" value="memoization" />
+    <MESSAGE value="ыуеы" />
+    <MESSAGE value="sets" />
+    <option name="LAST_COMMIT_MESSAGE" value="sets" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/HTTP_connector$HTTP_connector.coverage" NAME="HTTP connector Coverage Results" MODIFIED="1566177796424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/HTTP_connector$sets.coverage" NAME="sets Coverage Results" MODIFIED="1567528839467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/HTTP_connector$tk_inter.coverage" NAME="tk inter Coverage Results" MODIFIED="1567290645459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/HTTP_connector$functions_kit.coverage" NAME="functions kit Coverage Results" MODIFIED="1567353312314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/HTTP_connector$HTTP_connector__1_.coverage" NAME="HTTP connector (1) Coverage Results" MODIFIED="1566216483455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
