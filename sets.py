@@ -21,11 +21,20 @@ for key, value in my_dict.items():
     # который присваивается кортежу переменных key, value
     # print(key, value)
 
-def dic_vlues_to_string(my_dict: dict) -> str:
+def dic_vlues_to_string(dict: dict) -> str:
     tempList = []
-    for elm in my_dict.values():
+    for elm in dict.values():
         tempList.append(str(elm))
     strValues=','.join(tempList)
 
     return strValues
 
+def dic_keys_to_string(dict: dict) -> str:
+    tempList = []
+    for elm in dict:
+        tempList.append(str(elm))
+    strValues=','.join(tempList)
+
+    return strValues
+
+print(dic_keys_to_string(my_dict))
