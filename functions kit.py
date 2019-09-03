@@ -61,6 +61,7 @@ def funct_excecution_timer(funct):
 
 funct_excecution_timer(makeitalic(str='Test'))
 
+
 @funct_excecution_timer
 def makeitalic(str='Test'):
     def wrapped():
@@ -68,6 +69,79 @@ def makeitalic(str='Test'):
 
     return wrapped
 
+
+def shout(word="да"):
+    return word.capitalize() + "!"
+
+
+print(shout())
+scream = shout
+print(scream())
+del shout
+try:
+    print(shout())
+except NameError as e:
+    print(e)
+
+print(scream())
+
+
+def talk():
+    # Внутри определения функции "talk" мы можем определить другую...
+    def whisper(word="да"):
+        return word.lower() + "...";
+
+    # ... и сразу же её использовать!
+    print(whisper())
+
+
+# Теперь, КАЖДЫЙ РАЗ при вызове "talk", внутри неё определяется а затем
+# и вызывается функция "whisper".
+talk()
+# выведет: "да..."
+# Но вне функции "talk" НЕ существует никакой функции "whisper":
+try:
+    print(whisper())
+except NameError as e:
+    print(e)
+    # выведет : "name 'whisper' is not defined"
+
+
+def getTalk(type="shout"):
+    # Мы определяем функции прямо здесь
+    def shout(word="да"):
+        return word.capitalize() + "!"
+
+    def whisper(word="да"):
+        return word.lower() + "...";
+
+    # Затем возвращаем необходимую
+    if type == "shout":
+        # Заметьте, что мы НЕ используем "()", нам нужно не вызвать функцию,
+        # а вернуть объект функции
+        return shout
+    else:
+        return whisper
+
+
+# Как использовать это непонятное нечто?
+# Возьмём функцию и свяжем её с переменной
+talk = getTalk()
+
+
+# Как мы можем видеть, "talk" теперь - объект "function":
+# print(talk)
+# Который можно вызывать, как и функцию, определённую "обычным образом":
+# print(talk())
+# Если нам захочется - можно вызвать её напрямую из возвращаемого значения:
+# print(getTalk("whisper")())
+
+def doSomethingBefore(func):
+    print("Я делаю что-то ещё, перед тем как вызвать функцию, которую ты мне передал")
+    print(func())
+
+
+doSomethingBefore(scream)
 
 ######### memoization #########
 # https://habr.com/ru/post/335866/

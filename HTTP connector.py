@@ -4,11 +4,20 @@ import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util import Retry
 
+# Словарь в качестве аргумента через **arguments
+# Так вы сможете передавать в функцию разное количество аргументов ключевых слов.
+# В качестве аргументов ключевых слов можно также передавать и значения словаря:
+# def myfunc(**arguments):
+#  return arguments[‘key’]
+
+
 # realise Best practice with retries with requests
 url = 'http://httpbin.org/'
 HTTPMethods = 'status/504'
 
-stat_forcelist=(500, 502, 504)
+stat_forcelist = (500, 502, 504)
+
+
 def requests_retry_session(
         retries=6,
         backoff_factor=0.6,
