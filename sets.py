@@ -1,5 +1,7 @@
 # https://habr.com/ru/post/319164/
-
+# https://habr.com/ru/post/319200/
+# https://habr.com/ru/post/319876/
+# https://habr.com/ru/post/320288/
 
 
 my_dict = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6}
