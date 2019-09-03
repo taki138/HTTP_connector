@@ -1,14 +1,18 @@
 import json
 
-print(json.dumps({"name": "John", "age": 30}))
-print(json.dumps(["apple", "bananas"]))
-print(json.dumps(("apple", "bananas")))
-print(json.dumps("hello"))
-print(json.dumps(42))
-print(json.dumps(31.76))
-print(json.dumps(True))
-print(json.dumps(False))
-print(json.dumps(None))
+import flask
+import requests
+from flask import jsonify
+
+# print(json.dumps({"name": "John", "age": 30}))
+# print(json.dumps(["apple", "bananas"]))
+# print(json.dumps(("apple", "bananas")))
+# print(json.dumps("hello"))
+# print(json.dumps(42))
+# print(json.dumps(31.76))
+# print(json.dumps(True))
+# print(json.dumps(False))
+# print(json.dumps(None))
 
 
 
@@ -27,3 +31,8 @@ x = {
 }
 
 # print(json.dumps(x, indent=2))
+
+response = requests.get("https://jsonplaceholder.typicode.com/todos")
+todos = json.loads(response.text)
+
+print(todos[:2])
